@@ -16,7 +16,6 @@ class Student < ActiveRecord::Base
 
   def self.search(query)
     Student.where("name LIKE (?)", "%#{query}%")
-  
   end
 
 end
